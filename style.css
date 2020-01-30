@@ -1,0 +1,50 @@
+body {
+    /* font-family: ; */
+    background-color: thistle;
+}
+
+button:hover {
+    background-color: white !important;
+    color: blue !important;
+}
+
+p{
+   margin: 0px; 
+}
+
+label {
+    font-style: italic;
+    font-size: 14px;
+}
+
+.card {
+    width: 50%;
+}
+input::placeholder {
+    font-style: italic;
+}
+
+
+@media (max-width: 768px){
+    .card {
+        width: 80%;
+    }
+}
+
+@media (max-width: 375px){
+    .card {
+        width: 100%;
+    }
+    input::placeholder {
+        font-size: 12px;
+    }
+
+    option{
+        font-size: 12px;
+    }
+
+    .custom-select {
+        font-size: 16px;
+    }
+    
+}

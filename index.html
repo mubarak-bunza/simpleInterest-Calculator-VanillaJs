@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simple Interest</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container my-5">
+        <div class="jumbotron ">
+            <div class="row justify-content-center">
+                <!-- calculator card -->
+                <div class="card text-center">
+                    <div class="card-header">
+                        <h3>Simple Interest Calculator</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="input-group ">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Principal &#8358;</span>
+                            </div>
+                            <input type="text" id="principal" placeholder="Amount of money to invest?" class="form-control inputClass" aria-label="Amount (to the nearest naira)">
+                            <div class="input-group-append">
+                                <span class="input-group-text">.00</span>
+                            </div>
+                        </div>
+                        <label id="pError" class="float-left text-danger"> </label>
+                        <div class="input-group mt-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Rate </span>
+                            </div>
+                            <input type="text" id="rate" placeholder="Interest rate in percentage per month?" class="form-control inputClass" aria-label="rate">
+                        </div>
+                        <label id="rError" class="float-left text-danger"></label>
+                        <div class="input-group mt-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Time </span>
+                            </div>
+                            <input type="text" id="time" placeholder="In what time do you want to know your interest?" class="form-control inputClass" aria-label="time">
+                        </div>
+                        <label id="tError" class="float-left text-danger "></label>
+                        <div class="input-group mt-3">
+                            <select class="custom-select" id="timePeriod" aria-label="Choose time period">
+                                <option selected>Time period?</option>
+                                <option value="1">Month(s)</option>
+                                <option value="2">Year(s)</option>
+                            </select>
+                            <div class="input-group-append">
+                                <button id="btn" class="btn btn-primary" type="submit">Calculate Interest</button>
+                            </div>
+                        </div>
+                        <label id="tpError" class="float-left text-danger mb-3"></label>
+                        <p style="text-align: justify; margin-top: 20px;" >Interest: <span id="resultText"></span></p>
+                        <p style="text-align: justify;" >Principal Value: <span id="principalValue"></span></p>
+                        <small style="text-align: justify; display: none;" id="small">Note: the results above are calculated in <span id="timeText"></span><span id="periodText"></span><span id="resultText"></span> time.</small>
+                    </div>
+                </div>
+            </div>
+            <!-- /calculator card --> 
+            <div class="row justify-content-center mt-4 mb-n5">
+                <footer class="">
+                    <p>Coded by <a href="https://github.com/mubarak-bunza">M. A. Bunza</a></p>
+                </footer>
+            </div>   
+        </div>
+    </div>
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+    <!-- My main script -->
+    <script src="main.js"></script>
+
+    <!-- Sweetalert script -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="sweetalert2.all.min.js"></script>
+</body>
+</html>
