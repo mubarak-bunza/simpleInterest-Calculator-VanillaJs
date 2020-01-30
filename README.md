@@ -1,4 +1,4 @@
-# Simple Interest Calculator
+## Simple Interest Calculator
 
 ```
 A simple interest calculator using pure javascript.
